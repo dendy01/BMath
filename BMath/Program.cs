@@ -1,4 +1,6 @@
 ﻿using MathFigures;
+using BMath.Graphics;
+
 
 namespace App
 {
@@ -25,6 +27,11 @@ namespace App
 
             Cylinder cylinder = new Cylinder(2, 4);
             cylinder.PrintInfo();
+
+
+            StranghtLine line = new StranghtLine(new Point (1, 3), new Point(5, 8));
+            line.PrintInfo();
+
         }
     }
 }
