@@ -1,23 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BMath.Graphics
 {
-    class Point
-    {      
-        public double X { get; set; }
-
-        public double Y { get; set; }
-
-        public Point(double x, double y)
-        {
-            X = x;
-            Y = y;
-        }
-    }
     class StranghtLine
     {
         public Point A { get; set; }
@@ -25,7 +9,7 @@ namespace BMath.Graphics
         public double Coef => (A.Y - B.Y) / (A.X - B.X);
 
         public double Bias => A.Y - Coef * A.X;
-        public delegate double Function(double value);
+
         public StranghtLine(Point a, Point b)
         {
             A = a;
