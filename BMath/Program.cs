@@ -20,7 +20,11 @@ namespace App
 
             equilateralTriangle.PrintInfo();
 
+            Cube cube = new Cube(5);
+            cube.PrintInfo();
+
+            Cylinder cylinder = new Cylinder(2, 4);
+            cylinder.PrintInfo();
         }
     }
-
 }
